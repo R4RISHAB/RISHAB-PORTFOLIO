@@ -54,3 +54,25 @@ nav ul li:hover::after{
     background: repeating-linear-gradient(90deg, var(--ink) 0 24px, transparent 0 32px);
     opacity: .15;
 }
+.hero{
+    min-height:100vh;
+    padding: 150px 32px 100px;
+    position:relative;
+    background-image: radial-gradient(--paper-dim) 1.5px,transparent 1.5px;
+    background-size: 22px 22px;
+
+}
+.hero-eyebrow{
+    font-size: 13px;letter-spacing: 2px;
+    display: inline-block;
+    padding:5px 12px;
+    transform: rotate(-2deg);
+    margin: bottom 28px;
+
+}
+.hero h1{
+    font-family:'anton',sans-serif;
+    font-size: clamp(48px,10vw,128px);
+    line-height: 0.92;
+    text-transform: uppercase;
+}
