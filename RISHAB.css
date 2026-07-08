@@ -117,3 +117,30 @@ nav ul li:hover::after{
 
 }
 .t1{background: linear-gradient(135deg,var(--blue),#7EA1F0);}
+.t2{background:linear-gradient(135deg,var(--orange),var(--yellow));}
+
+/* ---------- ABOUT ---------- */
+.about-wrap{padding:40px 32px 100px;display:flex;justify-content:center;}
+.index-card{
+  background:var(--white);
+  border:2px solid var(--ink);
+  max-width:640px;width:100%;
+  padding:40px;
+  position:relative;
+  box-shadow:6px 6px 0 var(--ink);
+}
+.index-card::before,.index-card::after{
+  content:"";position:absolute;width:46px;height:16px;
+  background:rgba(244,196,15,.7);
+  border:1px solid rgba(21,19,15,.4);
+}
+.index-card::before{top:-10px;left:24px;transform:rotate(-4deg);}
+.index-card::after{bottom:-10px;right:24px;transform:rotate(3deg);}
+.index-card .eyebrow{font-size:12px;letter-spacing:2px;color:var(--orange);display:block;margin-bottom:16px;}
+.index-card p{font-size:17px;line-height:1.65;margin-bottom:16px;}
+.index-card .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+.index-card .skills span{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.5px;
+  border:1.5px solid var(--ink);padding:4px 9px;
+}
+ 
